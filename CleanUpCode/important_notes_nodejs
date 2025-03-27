@@ -1,0 +1,91 @@
+ What is the purpose of nodemon in a Node.js application?
+✅ Answer: nodemon automatically restarts the Node.js application when file changes are detected. It helps in development by removing the need to manually restart the server.
+
+Example:
+
+sh
+Copy
+Edit
+nodemon server.js
+2️⃣ Which command is used to install nodemon globally?
+✅ Answer:
+
+sh
+Copy
+Edit
+npm install -g nodemon
+This installs nodemon globally so it can be used in any project.
+
+3️⃣ What is the role of the package.json file in a Node.js project?
+✅ Answer: It stores metadata about the project, including dependencies, scripts, version, and configurations.
+
+4️⃣ Which section of package.json is used to specify the scripts to run commands?
+✅ Answer: "scripts" section
+
+Example in package.json:
+
+json
+Copy
+Edit
+"scripts": {
+  "start": "node server.js",
+  "dev": "nodemon server.js"
+}
+Run with:
+
+npm run start
+5️⃣ How do you install a package as a regular dependency (normal dependency)?
+✅ Answer:
+
+sh
+Copy
+Edit
+npm install package-name
+This installs the package under the "dependencies" section.
+
+6️⃣ What is the difference between "dependencies" and "devDependencies" in package.json?
+✅ Answer:
+
+"dependencies" → Required in both development & production
+
+"devDependencies" → Needed only in development (e.g., nodemon, jest)
+
+7️⃣ Which of the following is true when you run npm install --production?
+✅ Answer: Only "dependencies" will be installed. "devDependencies" are skipped.
+
+8️⃣ Which command is used to install a package as a dev dependency?
+✅ Answer:
+
+sh
+Copy
+Edit
+npm install package-name --save-dev
+This adds the package to "devDependencies" in package.json.
+
+9️⃣ What command would you use to uninstall a package using npm?
+✅ Answer:
+
+sh
+Copy
+Edit
+npm uninstall package-name
+This removes the package from node_modules and package.json.
+
+🔟 Which of the following is NOT a default field created in package.json when running npm init?
+✅ Answer: The default fields are:
+
+"name"
+
+"version"
+
+"description"
+
+"main"
+
+"scripts"
+
+"keywords"
+
+"author"
+
+"license"

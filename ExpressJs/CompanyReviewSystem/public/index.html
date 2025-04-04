@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Company Funda</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <h1>Add a Review</h1>
+
+  <form onsubmit="handleSubmit(event)">
+    <label>
+      Company Name:
+      <input type="text" id="companyName" name="cName" required />
+    </label>
+
+    <label>
+      Pros:
+      <input type="text" id="pros" name="prosName" required />
+    </label>
+
+    <label>
+      Cons:
+      <input type="text" id="cons" name="consName" required />
+    </label>
+
+    <label>
+      Rating:
+      <div class="star-rating">
+        <input type="radio" id="star5" name="rating" value="5" required /><label for="star5">★</label>
+        <input type="radio" id="star4" name="rating" value="4" /><label for="star4">★</label>
+        <input type="radio" id="star3" name="rating" value="3" /><label for="star3">★</label>
+        <input type="radio" id="star2" name="rating" value="2" /><label for="star2">★</label>
+        <input type="radio" id="star1" name="rating" value="1" /><label for="star1">★</label>
+      </div>
+    </label>
+
+    <button type="submit">Submit Review</button>
+  </form>
+
+  <hr />
+
+  <div class="review-section">
+    <form onsubmit="searchSubmit(event)">
+      <label>
+        Search Company:
+        <input type="search" id="companyNameSearch" name="companyNameSearch" />
+      </label>
+      <button type="submit">Search</button>
+    </form>
+
+    <br><br>
+    <div>
+      <strong>Company Reviews:</strong>
+      <br><br>
+      Company Name: <span id="companySpan"></span><br>
+      Company Rating: <span id="RatingSpan"></span>
+    </div>
+
+    <ul id="prosandcons"></ul>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.8.4/dist/axios.min.js"></script>
+  <script src="/script.js"></script>
+</body>
+</html>

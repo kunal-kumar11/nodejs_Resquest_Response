@@ -5,8 +5,8 @@
     e.preventDefault();
 
     const credentials = {
-      email: document.getElementById('email').value,
-      password: document.getElementById('password').value,
+      email: document.getElementById('email').value.trim(),
+      password: document.getElementById('password').value.trim(),
     };
 
     try {

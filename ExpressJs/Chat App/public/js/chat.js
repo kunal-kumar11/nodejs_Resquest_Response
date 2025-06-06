@@ -17,9 +17,9 @@ currentUserId = decodedToken.userId || decodedToken.id || decodedToken.user_id;
 console.log("here is current userid" + currentUserId);
 console.log("token of users" + token);
 
-const SUPABASE_URL = "https://lyibfiywqyedqikuodwo.supabase.co";
+const SUPABASE_URL = "";
 const SUPABASE_ANON_KEY =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imx5aWJmaXl3cXllZHFpa3VvZHdvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDg4NTU1OTAsImV4cCI6MjA2NDQzMTU5MH0.P7U_oyJ8-mgmYYuA3ch49V_jL1REZm3dy8DynifdJH8"; // This is a long string
+  ""; // This is a long string
 
 const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 

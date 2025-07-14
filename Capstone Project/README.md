@@ -59,7 +59,8 @@ Check out the live demo of CollabBoard in action!
 It showcases the real-time collaborative whiteboard, voice chat, drawing with Fabric.js, image save/delete with JWT-auth, and more.
 
 link from which you can download video check demo
-
+https://github.com/kunal-kumar11/nodejs_Resquest_Response/tree/main/Capstone%20Project/demo
+Name of video:CollabBoard_Demo_Video
 ---
 
 ## 📖 Project Structure

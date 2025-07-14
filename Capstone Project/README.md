@@ -54,6 +54,12 @@
 
 * Admin can revisit `/whiteboard` and view all past created room drawings
 
+📽️ Demo
+Check out the live demo of CollabBoard in action!
+It showcases the real-time collaborative whiteboard, voice chat, drawing with Fabric.js, image save/delete with JWT-auth, and more.
+
+link from which you can download video check demo
+
 ---
 
 ## 📖 Project Structure
